@@ -1,5 +1,31 @@
 import type { Metadata } from "next";
+import { Big_Shoulders_Stencil, Caveat, DM_Sans, Special_Elite, Stardos_Stencil } from "next/font/google";
 import "./globals.css";
+
+const display = Big_Shoulders_Stencil({
+  subsets: ["latin"],
+  weight: ["600", "700", "800", "900"],
+  variable: "--font-mr-display",
+});
+const stencil = Stardos_Stencil({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-mr-stencil",
+});
+const elite = Special_Elite({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-mr-elite",
+});
+const body = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-mr-body",
+});
+const script = Caveat({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-mr-script",
+});
 
 export const metadata: Metadata = {
   title: "II Desafío Medina Roja BTT · Almedina · 4 julio 2026",
@@ -23,7 +49,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={`${display.variable} ${stencil.variable} ${elite.variable} ${body.variable} ${script.variable}`}>
       <body>{children}</body>
     </html>
   );
