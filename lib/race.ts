@@ -16,6 +16,9 @@ export const race = {
   startTime: "por confirmar",
   price: "por confirmar",
   registrationUrl: "#inscripcion",
+  // Cuando la empresa externa abra inscripciones, poner true y reemplazar
+  // registrationUrl por la URL real (Rockthesport, formulario propio, etc.).
+  registrationOpen: false,
   schedule: [
     { time: "8:00",  title: "Recogida de dorsales", desc: "Parque municipal, junto a la salida.", color: "oliva" },
     { time: "8:45",  title: "Briefing técnico",     desc: "Recorrido, avituallamientos, seguridad.", color: "almagra" },
@@ -26,12 +29,12 @@ export const race = {
     { time: "14:00", title: "Comida popular",       desc: "Para inscritos y acompañantes. Plato manchego.", color: "naranja" },
   ] as const,
   sponsors: [
-    { name: "Ayto. Almedina", kind: "AYUNTAMIENTO" },
-    { name: "Diputación CR",  kind: "INSTITUCIÓN" },
-    { name: "Patrocinador",   kind: "PATROCINADOR" },
-    { name: "Patrocinador",   kind: "PATROCINADOR" },
-    { name: "Bar La Plaza",   kind: "COLABORADOR" },
-    { name: "Tienda BTT",     kind: "COLABORADOR" },
+    { name: "Próximamente", kind: "AYUNTAMIENTO" },
+    { name: "Próximamente", kind: "INSTITUCIÓN" },
+    { name: "Próximamente", kind: "PATROCINADOR" },
+    { name: "Próximamente", kind: "PATROCINADOR" },
+    { name: "Próximamente", kind: "COLABORADOR" },
+    { name: "Próximamente", kind: "COLABORADOR" },
   ],
   contact: {
     instagram: "https://www.instagram.com/desafiomedinarojabtt/",

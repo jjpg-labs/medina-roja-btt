@@ -134,6 +134,15 @@ section { padding: 64px 20px; }
 .btn-outline { background: transparent; color: var(--mr-almagra); border: 1.5px solid var(--mr-almagra); }
 .btn-outline:hover { background: var(--mr-almagra-50); }
 .btn-sm { font-size: 14px; padding: 10px 16px; }
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  pointer-events: none;
+  background: var(--mr-line-strong);
+  color: var(--mr-ink-2);
+  border-color: transparent;
+}
 
 .site-header {
   position: fixed;

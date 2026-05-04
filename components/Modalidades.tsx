@@ -47,9 +47,15 @@ export default function Modalidades() {
               <div className="qval">{race.startPoint}</div>
             </div>
           </div>
-          <a className="btn btn-outline qitem-btn" href={race.registrationUrl}>
-            <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
-          </a>
+          {race.registrationOpen ? (
+            <a className="btn btn-outline qitem-btn" href={race.registrationUrl}>
+              <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
+            </a>
+          ) : (
+            <button className="btn btn-outline qitem-btn" type="button" aria-disabled="true" disabled>
+              Inscripciones próximamente
+            </button>
+          )}
         </div>
       </div>
     </section>

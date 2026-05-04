@@ -19,8 +19,8 @@ export default function Patrocinadores() {
           ))}
         </div>
         <p className="sponsor-note">
-          ¿Quieres patrocinar la II Edición? Escríbenos a{" "}
-          <a href={`mailto:${race.contact.email}`}>{race.contact.email}</a>.
+          ¿Quieres patrocinar la II Edición? Escríbenos por{" "}
+          <a href={race.contact.instagram} target="_blank" rel="noreferrer">Instagram</a>.
         </p>
       </div>
     </section>

@@ -30,7 +30,13 @@ export default function Hero() {
           <a className="btn btn-accent" href="#mapa">
             Ver recorrido <ArrowRight size={18} strokeWidth={1.75} />
           </a>
-          <a className="btn btn-ghost" href={race.registrationUrl}>Inscribirme</a>
+          {race.registrationOpen ? (
+            <a className="btn btn-ghost" href={race.registrationUrl}>Inscribirme</a>
+          ) : (
+            <button className="btn btn-ghost" type="button" aria-disabled="true" disabled>
+              Inscripciones próximamente
+            </button>
+          )}
         </div>
       </div>
       <a href="#info" className="hero-scroll" aria-label="Scroll">

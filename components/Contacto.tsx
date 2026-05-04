@@ -1,4 +1,4 @@
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 import { race } from "@/lib/race";
 
 function InstagramGlyph({ size = 22 }: { size?: number }) {
@@ -31,20 +31,13 @@ export default function Contacto() {
               <div className="ci-val">{race.contact.instagramHandle}</div>
             </div>
           </a>
-          <a className="contact-item" href={`mailto:${race.contact.email}`}>
+          <div className="contact-item" aria-disabled="true">
             <span className="ci-ico"><Mail size={22} strokeWidth={1.75} /></span>
             <div>
               <div className="ci-lbl">Email</div>
-              <div className="ci-val">{race.contact.email}</div>
+              <div className="ci-val">Próximamente</div>
             </div>
-          </a>
-          <a className="contact-item" href="#">
-            <span className="ci-ico"><Phone size={22} strokeWidth={1.75} /></span>
-            <div>
-              <div className="ci-lbl">Teléfono</div>
-              <div className="ci-val">{race.contact.phone}</div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { race } from "@/lib/race";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +29,13 @@ export default function Header() {
         <a href="#cronograma">Cronograma</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <a href="#inscripcion" className="btn btn-primary btn-sm header-cta">Inscribirme</a>
+      {race.registrationOpen ? (
+        <a href={race.registrationUrl} className="btn btn-primary btn-sm header-cta">Inscribirme</a>
+      ) : (
+        <button type="button" aria-disabled="true" disabled className="btn btn-primary btn-sm header-cta">
+          Próximamente
+        </button>
+      )}
     </header>
   );
 }
