@@ -302,8 +302,7 @@ section { padding: 64px 20px; }
 .ci-val { font-size: 15px; font-weight: 600; color: var(--mr-ink); margin-top: 2px; }
 
 .footer { background: var(--mr-oliva); color: var(--mr-cream); padding: 48px 20px 24px; }
-.footer-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: center; }
-@media (min-width: 768px) { .footer-grid { grid-template-columns: 1fr auto; } }
+.footer-grid { display: flex; justify-content: center; align-items: center; }
 .footer-brand { display: flex; align-items: center; gap: 14px; }
 .footer-brand img { width: 54px; height: 54px; border-radius: 999px; background: var(--mr-cream); padding: 3px; object-fit: contain; }
 .footer-title { font-family: var(--mr-font-display); font-size: 18px; text-transform: uppercase; letter-spacing: .04em; }

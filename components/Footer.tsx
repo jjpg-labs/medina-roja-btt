@@ -12,11 +12,6 @@ export default function Footer() {
             <div className="footer-sub">Almedina · Castilla-La Mancha · 2026</div>
           </div>
         </div>
-        <div className="footer-meta">
-          <a href="#">Aviso legal</a>
-          <a href="#">Política de privacidad</a>
-          <a href={race.contact.instagram}>Instagram</a>
-        </div>
       </div>
       <div className="footer-line">© Medina Roja Bike Team · Vuelve el desafío.</div>
     </footer>

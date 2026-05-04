@@ -3,7 +3,7 @@ export const race = {
   edition: "II Edición · 2026",
   date: "4 Julio 2026 · sábado",
   location: "Almedina · Ciudad Real",
-  startPoint: "Plaza de Almedina",
+  startPoint: "Parque municipal",
   tagline: "Vuelve el desafío",
   // Foto del hero. Las opciones disponibles en /public/ son
   // /portada1.jpeg, /portada2.jpeg, /portada3.jpeg, /portada4.jpeg
@@ -17,11 +17,11 @@ export const race = {
   price: "por confirmar",
   registrationUrl: "#inscripcion",
   schedule: [
-    { time: "8:00",  title: "Recogida de dorsales", desc: "Plaza del pueblo, junto a la salida.", color: "oliva" },
+    { time: "8:00",  title: "Recogida de dorsales", desc: "Parque municipal, junto a la salida.", color: "oliva" },
     { time: "8:45",  title: "Briefing técnico",     desc: "Recorrido, avituallamientos, seguridad.", color: "almagra" },
     { time: "9:00",  title: "Salida CORTA · 30 km", desc: "Salida neutralizada los primeros 500 m.", color: "naranja" },
     { time: "9:15",  title: "Salida LARGA · 50 km", desc: "Tras la corta. 850 m+ de desnivel.",     color: "mostaza" },
-    { time: "11:30", title: "Llegadas",             desc: "Meta en la plaza. Avituallamiento líquido y sólido.", color: "almagra" },
+    { time: "11:30", title: "Llegadas",             desc: "Meta en el parque. Avituallamiento líquido y sólido.", color: "almagra" },
     { time: "13:30", title: "Entrega de trofeos",   desc: "Categorías por modalidad y tramo de edad.", color: "oliva" },
     { time: "14:00", title: "Comida popular",       desc: "Para inscritos y acompañantes. Plato manchego.", color: "naranja" },
   ] as const,
@@ -34,8 +34,8 @@ export const race = {
     { name: "Tienda BTT",     kind: "COLABORADOR" },
   ],
   contact: {
-    instagram: "https://instagram.com/medinarojabiketeam",
-    instagramHandle: "@medinarojabiketeam",
+    instagram: "https://www.instagram.com/desafiomedinarojabtt/",
+    instagramHandle: "@desafiomedinarojabtt",
     email: "medinarojabiketeam@gmail.com",
     phone: "por confirmar",
   },

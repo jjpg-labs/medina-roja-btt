@@ -15,7 +15,7 @@ export default function Cartel() {
           <div className="cartel-meta">
             <div><span className="qlbl">Fecha</span><span className="qval">4 julio 2026</span></div>
             <div><span className="qlbl">Modalidades</span><span className="qval">30 km · 50 km</span></div>
-            <div><span className="qlbl">Salida</span><span className="qval">Almedina · plaza</span></div>
+            <div><span className="qlbl">Salida</span><span className="qval">Parque municipal</span></div>
           </div>
           <div className="cartel-cta">
             <a className="btn btn-primary" href="/cartel.jpeg" download>
