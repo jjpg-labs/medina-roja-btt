@@ -11,19 +11,18 @@ export const race = {
   heroImage: "/portada3.jpeg",
   modalities: {
     corta: { km: 30, ascent: 350, desc: "Vuelta amable por los cerros y caminos del pueblo. Apta para iniciados con buena base." },
-    larga: { km: 50, ascent: 850, desc: "El desafío de verdad. Sierra, llanura manchega y atardecer en la meta." },
+    larga: { km: 50, ascent: 1000, desc: "El desafío de verdad. Sierra, llanura manchega y atardecer en la meta." },
   },
   startTime: "por confirmar",
   price: "por confirmar",
-  registrationUrl: "#inscripcion",
-  // Cuando la empresa externa abra inscripciones, poner true y reemplazar
-  // registrationUrl por la URL real (Rockthesport, formulario propio, etc.).
-  registrationOpen: false,
+  registrationUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
+  registrationOpen: true,
+  reglamentoUrl: "/reglamento.pdf",
   schedule: [
     { time: "8:00",  title: "Recogida de dorsales", desc: "Parque municipal, junto a la salida.", color: "oliva" },
     { time: "8:45",  title: "Briefing técnico",     desc: "Recorrido, avituallamientos, seguridad.", color: "almagra" },
     { time: "9:00",  title: "Salida CORTA · 30 km", desc: "Salida neutralizada los primeros 500 m.", color: "naranja" },
-    { time: "9:15",  title: "Salida LARGA · 50 km", desc: "Tras la corta. 850 m+ de desnivel.",     color: "mostaza" },
+    { time: "9:15",  title: "Salida LARGA · 50 km", desc: "Tras la corta. 1000 m+ de desnivel.",    color: "mostaza" },
     { time: "11:30", title: "Llegadas",             desc: "Meta en el parque. Avituallamiento líquido y sólido.", color: "almagra" },
     { time: "13:30", title: "Entrega de trofeos",   desc: "Categorías por modalidad y tramo de edad.", color: "oliva" },
     { time: "14:00", title: "Comida popular",       desc: "Para inscritos y acompañantes. Plato manchego.", color: "naranja" },

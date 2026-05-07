@@ -1,4 +1,5 @@
-import { Download } from "lucide-react";
+import { Download, FileText } from "lucide-react";
+import { race } from "@/lib/race";
 
 export default function Cartel() {
   return (
@@ -18,16 +19,18 @@ export default function Cartel() {
             <div><span className="qlbl">Salida</span><span className="qval">Parque municipal</span></div>
           </div>
           <div className="cartel-cta">
-            <a className="btn btn-primary" href="/cartel.jpeg" download>
+            <a className="btn btn-primary" href="/cartel.png" download>
               <Download size={18} strokeWidth={1.75} /> Descargar cartel
             </a>
-            <a className="btn btn-outline" href="#mapa">Ver recorrido</a>
+            <a className="btn btn-outline" href={race.reglamentoUrl} target="_blank" rel="noreferrer">
+              <FileText size={18} strokeWidth={1.75} /> Reglamento
+            </a>
           </div>
         </div>
         <div className="cartel-frame">
           <div className="cartel-frame-inner">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/cartel.jpeg" alt="Cartel oficial II Desafío Medina Roja BTT" />
+            <img src="/cartel.png" alt="Cartel oficial II Desafío Medina Roja BTT" />
           </div>
           <div className="cartel-tape cartel-tape-tl" />
           <div className="cartel-tape cartel-tape-br" />

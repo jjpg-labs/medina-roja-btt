@@ -37,13 +37,13 @@ export const metadata: Metadata = {
       "Almedina · 4 julio 2026. CORTA 30 km · LARGA 50 km. Vuelve el desafío.",
     type: "website",
     locale: "es_ES",
-    images: [{ url: "/cartel.jpeg", width: 1080, height: 1350, alt: "Cartel II Desafío Medina Roja BTT" }],
+    images: [{ url: "/cartel.png", width: 1080, height: 1350, alt: "Cartel II Desafío Medina Roja BTT" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "II Desafío Medina Roja BTT",
     description: "Almedina · 4 julio 2026 · BTT",
-    images: ["/cartel.jpeg"],
+    images: ["/cartel.png"],
   },
 };
 

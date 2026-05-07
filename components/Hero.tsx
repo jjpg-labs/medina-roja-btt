@@ -31,7 +31,9 @@ export default function Hero() {
             Ver recorrido <ArrowRight size={18} strokeWidth={1.75} />
           </a>
           {race.registrationOpen ? (
-            <a className="btn btn-ghost" href={race.registrationUrl}>Inscribirme</a>
+            <a className="btn btn-ghost" href={race.registrationUrl} target="_blank" rel="noreferrer">
+              Inscribirme
+            </a>
           ) : (
             <button className="btn btn-ghost" type="button" aria-disabled="true" disabled>
               Inscripciones próximamente
