@@ -60,6 +60,7 @@ const jsonLd = {
     price: "25",
     priceCurrency: "EUR",
     availability: "https://schema.org/InStock",
+    validFrom: "2026-05-07",
     url: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
     validThrough: "2026-07-01",
   },
