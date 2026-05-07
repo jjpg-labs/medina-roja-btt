@@ -1,3 +1,4 @@
+import Alojamientos from "@/components/Alojamientos";
 import Cartel from "@/components/Cartel";
 import Contacto from "@/components/Contacto";
 import Cronograma from "@/components/Cronograma";
@@ -20,6 +21,7 @@ export default function Page() {
         <Patrocinadores />
         <Cartel />
         <Cronograma />
+        <Alojamientos />
         <Faqs />
         <Contacto />
       </main>

@@ -258,7 +258,7 @@ section { padding: 64px 20px; }
 .mt-dot-corta { background: var(--mr-mostaza); }
 .mt-dot-larga { background: var(--mr-naranja); }
 .map-frame { margin-top: 24px; }
-.map-canvas { height: 500px; overflow: hidden; background: #EDE3C7; border-top: 1px solid var(--mr-line); border-bottom: 1px solid var(--mr-line); position: relative; }
+.map-canvas { height: 500px; overflow: hidden; background: #EDE3C7; border-top: 1px solid var(--mr-line); border-bottom: 1px solid var(--mr-line); position: relative; isolation: isolate; z-index: 0; }
 @media (max-width: 767px) { .map-canvas { height: 380px; } }
 .map-canvas .leaflet-container { width: 100%; height: 100%; background: #EDE3C7; font-family: var(--mr-font-body); }
 .mr-marker span {
@@ -286,6 +286,46 @@ section { padding: 64px 20px; }
   flex-shrink: 0;
 }
 .ml-spacer { flex: 1; }
+
+.alojamientos { background: var(--mr-cream-2); }
+.alojamiento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .alojamiento-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+}
+.alojamiento-card {
+  background: #fff;
+  border: 1px solid var(--mr-line);
+  border-radius: 16px;
+  padding: 24px 26px;
+  box-shadow: 0 4px 14px rgba(42, 31, 24, .06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.alojamiento-name {
+  font-family: var(--mr-font-display);
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: var(--mr-ink);
+  margin: 0;
+}
+.alojamiento-address {
+  font-size: 15px;
+  color: var(--mr-ink-2);
+  margin: 0;
+}
+.alojamiento-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
 
 .cronograma { background: var(--mr-cream); }
 .cronograma-callout {
