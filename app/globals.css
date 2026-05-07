@@ -395,15 +395,51 @@ section { padding: 64px 20px; }
 .tl-desc { font-size: 14px; color: var(--mr-ink-2); margin: 0; }
 
 .patrocinadores { background: var(--mr-cream-2); }
-.sponsor-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
-@media (min-width: 768px) { .sponsor-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
-.sponsor { aspect-ratio: 5/2; background: #fff; border: 1px solid var(--mr-line-strong); border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--mr-almagra); transition: all .2s; cursor: pointer; }
-.sponsor:hover { color: var(--mr-naranja-dark); border-color: var(--mr-naranja); transform: translateY(-2px); box-shadow: 0 4px 14px rgba(42,31,24,.1); }
-.sponsor-name { font-family: var(--mr-font-display); font-size: 18px; letter-spacing: .04em; text-transform: uppercase; }
-.sponsor-kind { font-family: var(--mr-font-display-2); font-size: 9px; letter-spacing: .22em; color: var(--mr-ink-3); margin-top: 6px; font-weight: 600; }
-.sponsor-note { font-size: 14px; color: var(--mr-ink-2); text-align: center; margin: 8px 0 0; }
-.sponsor-note a { color: var(--mr-almagra); }
-.sponsor-note a:hover { color: var(--mr-naranja-dark); }
+.sponsor-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid var(--mr-line);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 4px 14px rgba(42, 31, 24, .08);
+}
+@media (min-width: 768px) {
+  .sponsor-cta {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 36px 40px;
+  }
+}
+.sponsor-cta-ico {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px; height: 64px;
+  border-radius: 16px;
+  background: var(--mr-almagra-50);
+  color: var(--mr-almagra);
+  flex-shrink: 0;
+}
+.sponsor-cta-body { flex: 1; min-width: 0; }
+.sponsor-cta-title {
+  font-family: var(--mr-font-display);
+  font-size: clamp(1.4rem, 2.4vw, 1.7rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  margin: 0 0 10px;
+  color: var(--mr-ink);
+}
+.sponsor-cta-lead {
+  color: var(--mr-ink-2);
+  margin: 0 0 18px;
+  line-height: 1.55;
+  max-width: 60ch;
+}
 
 .contacto { background: var(--mr-cream); }
 .contacto-grid { display: grid; grid-template-columns: 1fr; gap: 32px; }

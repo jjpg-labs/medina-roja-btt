@@ -14,7 +14,7 @@ export const race = {
     larga: { km: 50, ascent: 1000, desc: "El desafío de verdad. Sierra, llanura manchega y atardecer en la meta." },
   },
   startTime: "8:30 (8:00 si calor extremo)",
-  price: "por confirmar",
+  price: "25 €",
   registrationUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
   registrationOpen: true,
   reglamentoUrl: "/reglamento.pdf",
@@ -26,14 +26,6 @@ export const race = {
     { time: "13:30", title: "Entrega de trofeos",   desc: "3 primeros general, 1º local, 1ª femenina, 1º sub18 (máster por confirmar).", color: "mostaza" },
     { time: "14:00", title: "Comida popular",       desc: "Incluida en la inscripción. Plato manchego para inscritos y acompañantes.", color: "naranja" },
   ] as const,
-  sponsors: [
-    { name: "Próximamente", kind: "AYUNTAMIENTO" },
-    { name: "Próximamente", kind: "INSTITUCIÓN" },
-    { name: "Próximamente", kind: "PATROCINADOR" },
-    { name: "Próximamente", kind: "PATROCINADOR" },
-    { name: "Próximamente", kind: "COLABORADOR" },
-    { name: "Próximamente", kind: "COLABORADOR" },
-  ],
   contact: {
     instagram: "https://www.instagram.com/desafiomedinarojabtt/",
     instagramHandle: "@desafiomedinarojabtt",

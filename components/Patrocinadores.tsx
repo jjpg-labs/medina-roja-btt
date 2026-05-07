@@ -1,3 +1,4 @@
+import { ArrowRight, Handshake } from "lucide-react";
 import { race } from "@/lib/race";
 
 export default function Patrocinadores() {
@@ -6,22 +7,23 @@ export default function Patrocinadores() {
       <div className="wrap">
         <p className="eyebrow">Apoyan la prueba</p>
         <h2 className="section-title">Patrocinadores y colaboradores.</h2>
-        <p className="section-lead">
-          Anunciados próximamente — esta es la lista provisional. La definitiva
-          se publicará en las próximas semanas.
-        </p>
-        <div className="sponsor-grid">
-          {race.sponsors.map((s, i) => (
-            <div key={i} className="sponsor">
-              <div className="sponsor-name">{s.name}</div>
-              <div className="sponsor-kind">{s.kind}</div>
-            </div>
-          ))}
+
+        <div className="sponsor-cta">
+          <span className="sponsor-cta-ico">
+            <Handshake size={32} strokeWidth={1.75} />
+          </span>
+          <div className="sponsor-cta-body">
+            <h3 className="sponsor-cta-title">Buscando aliados para la II edición.</h3>
+            <p className="sponsor-cta-lead">
+              Estamos cerrando la lista de patrocinadores y colaboradores. Si
+              quieres apoyar la prueba o aportar producto, escríbenos por
+              Instagram — anunciaremos a todos en las próximas semanas.
+            </p>
+            <a className="btn btn-primary" href={race.contact.instagram} target="_blank" rel="noreferrer">
+              Patrocinar la prueba <ArrowRight size={18} strokeWidth={1.75} />
+            </a>
+          </div>
         </div>
-        <p className="sponsor-note">
-          ¿Quieres patrocinar la II Edición? Escríbenos por{" "}
-          <a href={race.contact.instagram} target="_blank" rel="noreferrer">Instagram</a>.
-        </p>
       </div>
     </section>
   );

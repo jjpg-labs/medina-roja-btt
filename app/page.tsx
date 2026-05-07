@@ -17,10 +17,10 @@ export default function Page() {
         <Hero />
         <Modalidades />
         <Mapa />
+        <Patrocinadores />
         <Cartel />
         <Cronograma />
         <Faqs />
-        <Patrocinadores />
         <Contacto />
       </main>
       <Footer />
