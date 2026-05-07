@@ -61,8 +61,12 @@ export default function Mapa() {
         </div>
 
         <div className="map-legend wrap">
-          <div className="ml-item"><span className="ml-pin ml-start">▲</span> Salida / Meta</div>
-          <div className="ml-item"><span className="ml-pin ml-water" /> Avituallamiento</div>
+          <div className="ml-item"><span className="ml-pin ml-start" /> Salida</div>
+          <div className="ml-item"><span className="ml-pin ml-finish" /> Meta</div>
+          <div className="ml-item">
+            <span className="ml-line" style={{ background: current.color }} />
+            Recorrido {route === "corta" ? "30 km" : "50 km"}
+          </div>
           <div className="ml-spacer" />
           <a className="btn btn-outline btn-sm" href={current.gpx} download>
             <Download size={16} strokeWidth={1.75} /> GPX {current.km} km
