@@ -72,6 +72,25 @@ const faqs = [
     ),
   },
   {
+    q: "¿Dónde puedo dormir?",
+    a: (
+      <>
+        <p>Almedina tiene dos alojamientos con <strong>descuento para corredores y acompañantes</strong>:</p>
+        <ul>
+          <li>
+            <strong>Hostal La Taifa de Almedina</strong> — C. Mayor, 4.{" "}
+            <a href="https://www.google.com/maps/search/?api=1&query=Hostal+La+Taifa+de+Almedina+13328+Ciudad+Real" target="_blank" rel="noreferrer">Ver en Google Maps →</a>
+          </li>
+          <li>
+            <strong>Casa Rural El Reino de Almedina</strong> — Grupo Escolar, 1D.{" "}
+            <a href="https://www.google.com/maps/search/?api=1&query=Casa+Rural+El+Reino+de+Almedina+13328+Ciudad+Real" target="_blank" rel="noreferrer">Ver en Google Maps →</a>
+          </li>
+        </ul>
+        <p>Reservas y descuento al teléfono <a href="tel:+34636336564"><strong>636 33 65 64</strong></a> (mismo número para ambos).</p>
+      </>
+    ),
+  },
+  {
     q: "¿Cómo os puedo seguir?",
     a: (
       <ul>
