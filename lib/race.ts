@@ -5,10 +5,10 @@ export const race = {
   location: "Almedina · Ciudad Real",
   startPoint: "Parque Miguel Hernández",
   tagline: "Vuelve el desafío",
-  // Foto del hero. Las opciones disponibles en /public/ son
-  // /portada1.jpeg, /portada2.jpeg, /portada3.jpeg, /portada4.jpeg
-  // (también /cartel.jpeg, pero el cartel tiene su propia sección).
-  heroImage: "/portada3.jpeg",
+  // Foto del hero. Las opciones disponibles (recortes 16:9 con el skyline
+  // de Almedina centrado) son /portada1-hero.jpg, /portada2-hero.jpg,
+  // /portada3-hero.jpg y /portada4-hero.jpg.
+  heroImage: "/portada3-hero.jpg",
   modalities: {
     corta: { km: 30, ascent: 350, desc: "Vuelta amable por los cerros y caminos del pueblo. Apta para iniciados con buena base." },
     larga: { km: 50, ascent: 1000, desc: "El desafío de verdad. Sierra, llanura manchega y atardecer en la meta." },
