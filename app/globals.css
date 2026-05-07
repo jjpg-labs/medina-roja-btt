@@ -186,7 +186,7 @@ section { padding: 64px 20px; }
   overflow: hidden;
 }
 @media (max-width: 767px) { .hero { min-height: 80vh; } }
-.hero-photo { position: absolute; inset: 0; background-size: cover; background-position: center; filter: contrast(1.05) saturate(.92) sepia(.08); }
+.hero-photo { position: absolute; inset: 0; background-size: cover; background-position: center bottom; filter: contrast(1.05) saturate(.92) sepia(.08); }
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(75,40,28,.55) 0%, rgba(75,40,28,.35) 50%, rgba(42,31,24,.75) 100%); }
 .hero-topo {
   position: absolute; inset: 0; opacity: .18;
