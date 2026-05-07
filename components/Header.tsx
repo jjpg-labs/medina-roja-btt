@@ -27,6 +27,7 @@ export default function Header() {
         <a href="#info">Modalidades</a>
         <a href="#mapa">Recorrido</a>
         <a href="#cronograma">Cronograma</a>
+        <a href="#faqs">FAQs</a>
         <a href="#contacto">Contacto</a>
       </nav>
       {race.registrationOpen ? (

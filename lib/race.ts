@@ -15,6 +15,10 @@ export const race = {
   },
   startTime: "8:30 (8:00 si calor extremo)",
   price: "25 €",
+  priceTiers: [
+    { label: "Tramo 1", deadline: "hasta 29 mayo",     price: "25 €", note: "Maillot el día de la prueba" },
+    { label: "Tramo 2", deadline: "30 mayo – 1 julio", price: "25 €", note: "Maillot después de la prueba" },
+  ],
   registrationUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
   registrationOpen: true,
   reglamentoUrl: "/reglamento.pdf",

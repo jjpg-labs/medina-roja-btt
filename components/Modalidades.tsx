@@ -33,11 +33,15 @@ export default function Modalidades() {
               <div className="qval">{race.startTime}</div>
             </div>
           </div>
-          <div className="qitem">
+          <div className="qitem qitem-price">
             <Euro strokeWidth={1.75} />
             <div>
-              <div className="qlbl">Inscripción</div>
-              <div className="qval">{race.price}</div>
+              <div className="qlbl">Inscripción — {race.price}</div>
+              {race.priceTiers.map((tier) => (
+                <div key={tier.label} className="qval">
+                  <strong>{tier.label}</strong> · {tier.deadline}
+                </div>
+              ))}
             </div>
           </div>
           <div className="qitem">

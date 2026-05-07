@@ -53,8 +53,11 @@ const faqs = [
           {" "}en dos tramos:
         </p>
         <ul>
-          <li><strong>Tramo 1</strong> (hasta el 29 de mayo) — bolsa del corredor y maillot el día de la prueba.</li>
-          <li><strong>Tramo 2</strong> (30 de mayo – 1 de julio) — 25 €. El maillot se entrega después de la prueba.</li>
+          {race.priceTiers.map((tier) => (
+            <li key={tier.label}>
+              <strong>{tier.label}</strong> ({tier.deadline}) — {tier.price}. {tier.note}.
+            </li>
+          ))}
         </ul>
         <p>A partir del <strong>25 de junio</strong> la participación queda sujeta a disponibilidad de dorsales.</p>
       </>

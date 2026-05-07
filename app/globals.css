@@ -247,6 +247,7 @@ section { padding: 64px 20px; }
 .qitem .qlbl { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--mr-ink-3); font-weight: 700; }
 .qitem .qval { font-size: 15px; font-weight: 600; color: var(--mr-ink); margin-top: 2px; }
 .qitem-btn { justify-content: center; }
+.qitem-price > svg { margin-top: 10px; }
 
 .mapa { background: var(--mr-cream-2); padding-bottom: 0; }
 .mapa .wrap { padding-bottom: 24px; }
