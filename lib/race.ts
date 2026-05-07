@@ -19,7 +19,7 @@ export const race = {
   registrationOpen: true,
   reglamentoUrl: "/reglamento.pdf",
   schedule: [
-    { time: "7:00",  title: "Recogida de dorsales", desc: "Parque Miguel Hernández, hasta las 8:15. También viernes 3 de 19:30 a 21:00.", color: "oliva" },
+    { time: "7:00",  title: "Recogida de dorsales", desc: "Parque Miguel Hernández, hasta las 8:15.", color: "oliva" },
     { time: "8:15",  title: "Briefing técnico",     desc: "Recorrido, avituallamiento, seguridad y material obligatorio.", color: "almagra" },
     { time: "8:30",  title: "Salida",               desc: "CORTA y LARGA juntas (8:00 si las condiciones meteo lo exigen).", color: "naranja" },
     { time: "13:00", title: "Cierre de meta",       desc: "Tiempo máximo 4:30 h. Comida y bebida al cruzar la línea.", color: "almagra" },

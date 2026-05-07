@@ -1,6 +1,7 @@
 import Cartel from "@/components/Cartel";
 import Contacto from "@/components/Contacto";
 import Cronograma from "@/components/Cronograma";
+import Faqs from "@/components/Faqs";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -18,6 +19,7 @@ export default function Page() {
         <Mapa />
         <Cartel />
         <Cronograma />
+        <Faqs />
         <Patrocinadores />
         <Contacto />
       </main>
