@@ -33,6 +33,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SportsEvent",
   name: "II Desafío Medina Roja BTT",
+  description: "II edición del Desafío Medina Roja BTT en Almedina (Ciudad Real). Dos modalidades, 30 km y 50 km, por los cerros del Campo de Montiel. 4 de julio de 2026. Vuelve el desafío.",
   startDate: "2026-07-04T08:30:00+02:00",
   endDate: "2026-07-04T14:00:00+02:00",
   location: {
@@ -45,6 +46,11 @@ const jsonLd = {
       addressCountry: "ES",
     },
   },
+  organizer: {
+    "@type": "Organization",
+    name: "Medina Roja Bike Team",
+    url: "https://www.instagram.com/desafiomedinarojabtt/",
+  },
   url: BASE_URL,
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
@@ -53,6 +59,7 @@ const jsonLd = {
     "@type": "Offer",
     price: "25",
     priceCurrency: "EUR",
+    availability: "https://schema.org/InStock",
     url: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
     validThrough: "2026-07-01",
   },
