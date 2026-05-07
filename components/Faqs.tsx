@@ -2,7 +2,6 @@ import { ChevronDown } from "lucide-react";
 import { race } from "@/lib/race";
 
 const MAPS_URL = "https://maps.app.goo.gl/ktsYY93rAcopFQ5v8";
-const FACEBOOK = "Desafío Medina Roja";
 
 const faqs = [
   {
@@ -82,7 +81,12 @@ const faqs = [
             {race.contact.instagramHandle}
           </a>.
         </li>
-        <li>Facebook — {FACEBOOK}.</li>
+        <li>
+          Facebook —{" "}
+          <a href={race.contact.facebook} target="_blank" rel="noreferrer">
+            {race.contact.facebookHandle}
+          </a>.
+        </li>
       </ul>
     ),
   },

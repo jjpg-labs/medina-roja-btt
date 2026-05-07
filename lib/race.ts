@@ -37,6 +37,8 @@ export const race = {
   contact: {
     instagram: "https://www.instagram.com/desafiomedinarojabtt/",
     instagramHandle: "@desafiomedinarojabtt",
+    facebook: "https://www.facebook.com/people/Desaf%C3%ADo-Medina-Roja/61577237314001/",
+    facebookHandle: "Desafío Medina Roja",
     email: "medinarojabiketeam@gmail.com",
     phone: "por confirmar",
   },
