@@ -10,8 +10,8 @@ export const race = {
   // /portada3-hero.jpg y /portada4-hero.jpg.
   heroImage: "/portada3-hero.jpg",
   modalities: {
-    corta: { km: 30, ascent: 350, desc: "Vuelta amable por los cerros y caminos del pueblo. Apta para iniciados con buena base." },
-    larga: { km: 50, ascent: 1000, desc: "El desafío de verdad. Sierra, llanura manchega y atardecer en la meta." },
+    corta: { km: 30, ascent: 350, desc: "Terreno rojo, Camino de Aníbal y Fuente de la Zarza. 80 % pistas fluidas; apta para iniciados." },
+    larga: { km: 50, ascent: 1000, desc: "Pistas rápidas, herradura y senderos técnicos en 50 km. El Camino de Aníbal al ecuador." },
   },
   startTime: "8:30 (8:00 si calor extremo)",
   price: "25 €",

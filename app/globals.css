@@ -249,7 +249,7 @@ section { padding: 64px 20px; }
 .qitem-btn { justify-content: center; }
 .qitem-price > svg { margin-top: 10px; }
 
-.mapa { background: var(--mr-cream-2); padding-bottom: 0; }
+.mapa { background: var(--mr-cream-2); }
 .mapa .wrap { padding-bottom: 24px; }
 .map-toggle { display: inline-flex; background: #fff; border: 1px solid var(--mr-line); border-radius: 999px; padding: 4px; gap: 4px; margin-top: 6px; }
 .mt-btn { font-family: var(--mr-font-body); font-size: 14px; font-weight: 600; color: var(--mr-ink-2); padding: 10px 18px; border: none; background: transparent; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all .2s; }
@@ -258,8 +258,8 @@ section { padding: 64px 20px; }
 .mt-dot { width: 10px; height: 10px; border-radius: 99px; background: var(--mr-ink-3); display: inline-block; }
 .mt-dot-corta { background: var(--mr-mostaza); }
 .mt-dot-larga { background: var(--mr-naranja); }
-.map-frame { margin-top: 24px; }
-.map-canvas { height: 500px; overflow: hidden; background: #EDE3C7; border-top: 1px solid var(--mr-line); border-bottom: 1px solid var(--mr-line); position: relative; isolation: isolate; z-index: 0; }
+.map-frame { margin-top: 24px; border: 1px solid var(--mr-line); border-radius: 16px; overflow: hidden; max-width: 1080px; margin-left: auto; margin-right: auto; }
+.map-canvas { height: 500px; overflow: hidden; background: #EDE3C7; position: relative; isolation: isolate; z-index: 0; }
 @media (max-width: 767px) { .map-canvas { height: 380px; } }
 .map-canvas .leaflet-container { width: 100%; height: 100%; background: #EDE3C7; font-family: var(--mr-font-body); }
 .mr-marker span {
@@ -435,7 +435,7 @@ section { padding: 64px 20px; }
 .tl-title { font-family: var(--mr-font-body); font-size: 18px; font-weight: 700; margin: 0 0 4px; color: var(--mr-ink); text-transform: none; letter-spacing: 0; }
 .tl-desc { font-size: 14px; color: var(--mr-ink-2); margin: 0; }
 
-.patrocinadores { background: var(--mr-cream-2); }
+.patrocinadores { background: var(--mr-cream); }
 .sponsor-cta {
   display: flex;
   flex-direction: column;

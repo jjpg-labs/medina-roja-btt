@@ -27,8 +27,8 @@ export default function Mapa() {
         <p className="eyebrow">Recorrido</p>
         <h2 className="section-title">El trazado por Almedina.</h2>
         <p className="section-lead">
-          Toggle entre las dos rutas. Los GPX estarán disponibles para descarga
-          unos días antes de la prueba.
+          Toggle entre las dos rutas. El trazado es orientativo —basado en la edición anterior— y puede variar.
+          Los GPX definitivos estarán disponibles unos días antes de la prueba.
         </p>
 
         <div className="map-toggle" role="tablist">
