@@ -24,9 +24,9 @@ type Props = { gpxUrl: string; routeColor: string };
 function makeMarker(bg: string) {
   return L.divIcon({
     className: "mr-marker",
-    html: `<span style="background:${bg};border:2px solid #D9CDA0;"></span>`,
-    iconSize: [22, 22],
-    iconAnchor: [11, 11],
+    html: `<span aria-hidden="true" style="background:${bg};border:2px solid #D9CDA0;"></span>`,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14],
   });
 }
 
@@ -69,6 +69,11 @@ function GpxLayer({ gpxUrl, routeColor }: Props) {
 
     gpx.on("loaded", (e) => {
       map.fitBounds(e.target.getBounds(), { padding: [24, 24] });
+      map.getContainer().querySelectorAll<HTMLElement>(".mr-marker").forEach((el) => {
+        el.setAttribute("aria-hidden", "true");
+        el.setAttribute("tabindex", "-1");
+        el.setAttribute("role", "presentation");
+      });
     });
     gpx.on("error", () => {
       // No GPX available — keep default Almedina center.

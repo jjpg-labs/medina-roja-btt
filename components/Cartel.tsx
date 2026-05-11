@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Download, FileText } from "lucide-react";
 import { race } from "@/lib/race";
 
@@ -29,8 +30,13 @@ export default function Cartel() {
         </div>
         <div className="cartel-frame">
           <div className="cartel-frame-inner">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/cartel.png" alt="Cartel oficial II Desafío Medina Roja BTT" />
+            <Image
+              src="/cartel.png"
+              alt="Cartel oficial II Desafío Medina Roja BTT"
+              width={1080}
+              height={1350}
+              sizes="(max-width: 900px) 90vw, 460px"
+            />
           </div>
           <div className="cartel-tape cartel-tape-tl" />
           <div className="cartel-tape cartel-tape-br" />

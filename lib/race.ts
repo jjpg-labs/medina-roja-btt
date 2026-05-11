@@ -5,9 +5,6 @@ export const race = {
   location: "Almedina · Ciudad Real",
   startPoint: "Parque Miguel Hernández",
   tagline: "Vuelve el desafío",
-  // Foto del hero. Las opciones disponibles (recortes 16:9 con el skyline
-  // de Almedina centrado) son /portada1-hero.jpg, /portada2-hero.jpg,
-  // /portada3-hero.jpg y /portada4-hero.jpg.
   heroImage: "/portada3-hero.jpg",
   modalities: {
     corta: { km: 30, ascent: 350, desc: "Terreno rojo, Camino de Aníbal y Fuente de la Zarza. 80 % pistas fluidas; apta para iniciados." },

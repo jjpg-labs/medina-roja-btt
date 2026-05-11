@@ -31,7 +31,13 @@ export default function Header() {
         <a href="#contacto">Contacto</a>
       </nav>
       {race.registrationOpen ? (
-        <a href={race.registrationUrl} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm header-cta">
+        <a
+          href={race.registrationUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-primary btn-sm header-cta"
+          aria-label="Inscribirme en la prueba (cabecera)"
+        >
           Inscribirme
         </a>
       ) : (

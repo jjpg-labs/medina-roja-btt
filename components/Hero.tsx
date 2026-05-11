@@ -1,10 +1,19 @@
+import Image from "next/image";
 import { ArrowRight, ChevronDown, Clock, MapPin } from "lucide-react";
 import { race } from "@/lib/race";
 
 export default function Hero() {
   return (
     <section id="top" className="hero">
-      <div className="hero-photo" style={{ backgroundImage: `url(${race.heroImage})` }} />
+      <div className="hero-photo">
+        <Image
+          src={race.heroImage}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+        />
+      </div>
       <div className="hero-overlay" />
       <div className="hero-topo" />
       <div className="hero-content">
@@ -31,7 +40,13 @@ export default function Hero() {
             Ver recorrido <ArrowRight size={18} strokeWidth={1.75} />
           </a>
           {race.registrationOpen ? (
-            <a className="btn btn-ghost" href={race.registrationUrl} target="_blank" rel="noreferrer">
+            <a
+              className="btn btn-ghost"
+              href={race.registrationUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Inscribirme en la prueba"
+            >
               Inscribirme
             </a>
           ) : (

@@ -52,7 +52,13 @@ export default function Modalidades() {
             </div>
           </div>
           {race.registrationOpen ? (
-            <a className="btn btn-outline qitem-btn" href={race.registrationUrl} target="_blank" rel="noreferrer">
+            <a
+              className="btn btn-outline qitem-btn"
+              href={race.registrationUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Inscribirme — ver modalidades y precios"
+            >
               <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
             </a>
           ) : (

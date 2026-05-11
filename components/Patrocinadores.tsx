@@ -9,7 +9,7 @@ export default function Patrocinadores() {
         <h2 className="section-title">Patrocinadores y colaboradores.</h2>
 
         <div className="sponsor-cta">
-          <span className="sponsor-cta-ico">
+          <span className="sponsor-cta-ico" aria-hidden="true">
             <Handshake size={32} strokeWidth={1.75} />
           </span>
           <div className="sponsor-cta-body">

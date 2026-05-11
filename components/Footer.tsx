@@ -14,6 +14,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-line">© Medina Roja Bike Team · Vuelve el desafío.</div>
+      <div className="footer-credit">Desarrollado por jjpg-labs · Almedina</div>
     </footer>
   );
 }
