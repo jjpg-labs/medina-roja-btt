@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { Download } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { race } from "@/lib/race";
 
 const RouteMap = dynamic(() => import("./RouteMap"), {
@@ -19,7 +19,25 @@ type RouteKey = keyof typeof ROUTES;
 
 export default function Mapa() {
   const [route, setRoute] = useState<RouteKey>("larga");
+  const [mountMap, setMountMap] = useState(false);
+  const frameRef = useRef<HTMLDivElement>(null);
   const current = ROUTES[route];
+
+  useEffect(() => {
+    if (mountMap || !frameRef.current) return;
+    const node = frameRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setMountMap(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [mountMap]);
 
   return (
     <section id="mapa" className="mapa">
@@ -51,13 +69,17 @@ export default function Mapa() {
         </div>
       </div>
 
-      <div className="map-frame">
+      <div className="map-frame" ref={frameRef}>
         <div className="map-canvas">
-          <RouteMap
-            key={route}
-            gpxUrl={current.gpx}
-            routeColor={current.color}
-          />
+          {mountMap ? (
+            <RouteMap
+              key={route}
+              gpxUrl={current.gpx}
+              routeColor={current.color}
+            />
+          ) : (
+            <div className="map-canvas" aria-busy="true" />
+          )}
         </div>
 
         <div className="map-legend wrap">
