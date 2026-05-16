@@ -39,4 +39,5 @@ export const race = {
     corta: "/corta-30km.gpx",
     larga: "/larga-50km.gpx",
   },
+  toteemiUrl: "https://toteemi.com/producto/inscripcion-desafio-medina-roja/",
 };

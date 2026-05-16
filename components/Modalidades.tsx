@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Clock, Euro, MapPin, Mountain } from "lucide-react";
 import { race } from "@/lib/race";
 
@@ -52,15 +53,27 @@ export default function Modalidades() {
             </div>
           </div>
           {race.registrationOpen ? (
-            <a
-              className="btn btn-outline qitem-btn"
-              href={race.registrationUrl}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Inscribirme — ver modalidades y precios"
-            >
-              <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
-            </a>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+              <a
+                className="btn btn-outline qitem-btn"
+                href={race.registrationUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Inscribirme — ver modalidades y precios"
+              >
+                <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
+              </a>
+              <a
+                className="btn btn-outline qitem-btn"
+                href={race.toteemiUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Inscribirme vía Toteemi"
+              >
+                <Image src="/sponsors/toteemi.svg" alt="" width={20} height={24} aria-hidden="true" />
+                Toteemi
+              </a>
+            </div>
           ) : (
             <button className="btn btn-outline qitem-btn" type="button" aria-disabled="true" disabled>
               Inscripciones próximamente

@@ -133,6 +133,8 @@ section { padding: 64px 20px; }
 .btn-ghost:hover { background: rgba(250, 246, 236, .12); }
 .btn-outline { background: transparent; color: var(--mr-almagra); border: 1.5px solid var(--mr-almagra); }
 .btn-outline:hover { background: var(--mr-almagra-50); }
+.btn-muted { background: transparent; color: var(--mr-ink-2); border: 1.5px solid var(--mr-line-strong); }
+.btn-muted:hover { background: var(--mr-cream-2); }
 .btn-sm { font-size: 14px; padding: 10px 16px; }
 .btn:disabled,
 .btn[aria-disabled="true"] {
