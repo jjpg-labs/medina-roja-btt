@@ -51,6 +51,11 @@ const jsonLd = {
     name: "Medina Roja Bike Team",
     url: "https://www.instagram.com/desafiomedinarojabtt/",
   },
+  performer: {
+    "@type": "Organization",
+    name: "Medina Roja Bike Team",
+    url: "https://www.instagram.com/desafiomedinarojabtt/",
+  },
   url: BASE_URL,
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
