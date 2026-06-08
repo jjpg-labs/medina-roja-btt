@@ -1,4 +1,5 @@
-import { ArrowRight, Handshake } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import { race } from "@/lib/race";
 
 export default function Patrocinadores() {
@@ -8,22 +9,34 @@ export default function Patrocinadores() {
         <p className="eyebrow">Apoyan la prueba</p>
         <h2 className="section-title">Patrocinadores y colaboradores.</h2>
 
-        <div className="sponsor-cta">
-          <span className="sponsor-cta-ico" aria-hidden="true">
-            <Handshake size={32} strokeWidth={1.75} />
-          </span>
-          <div className="sponsor-cta-body">
-            <h3 className="sponsor-cta-title">Buscando aliados para la II edición.</h3>
-            <p className="sponsor-cta-lead">
-              Estamos cerrando la lista de patrocinadores y colaboradores. Si
-              quieres apoyar la prueba o aportar producto, escríbenos por
-              Instagram — anunciaremos a todos en las próximas semanas.
-            </p>
-            <a className="btn btn-primary" href={race.contact.instagram} target="_blank" rel="noreferrer">
-              Patrocinar la prueba <ArrowRight size={18} strokeWidth={1.75} />
-            </a>
-          </div>
-        </div>
+        <ul className="sponsor-grid">
+          {race.sponsors.map((sponsor) => {
+            const tile = (
+              <>
+                {sponsor.logo && (
+                  <Image src={sponsor.logo} alt={sponsor.name} width={160} height={44} className="sponsor-logo" />
+                )}
+                <span className="sponsor-name">{sponsor.name}</span>
+              </>
+            );
+            return (
+              <li key={sponsor.name} className="sponsor-tile">
+                {sponsor.url ? (
+                  <a href={sponsor.url} target="_blank" rel="noreferrer" className="sponsor-tile-link">
+                    {tile}
+                  </a>
+                ) : tile}
+              </li>
+            );
+          })}
+        </ul>
+
+        <p className="sponsor-join">
+          ¿Quieres unirte a la lista? Escríbenos por{" "}
+          <a href={race.contact.instagram} target="_blank" rel="noreferrer">
+            Instagram <ArrowRight size={14} strokeWidth={2} aria-hidden="true" />
+          </a>
+        </p>
       </div>
     </section>
   );
