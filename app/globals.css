@@ -489,29 +489,105 @@ section { padding: 64px 20px; }
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 14px;
   margin: 0 0 40px;
   padding: 0;
 }
-@media (min-width: 600px) { .sponsor-grid { grid-template-columns: repeat(4, 1fr); } }
-@media (min-width: 900px) { .sponsor-grid { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 600px) { .sponsor-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 980px) { .sponsor-grid { grid-template-columns: repeat(4, 1fr); } }
+.sponsor-grid > li { display: flex; }
 .sponsor-tile {
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
-  min-height: 72px;
-  padding: 18px 20px;
-  background: var(--mr-cream-2);
+  width: 100%;
+  min-height: 132px;
+  padding: 24px;
+  background: #fff;
   border: none;
   border-top: 3px solid var(--mr-almagra);
   border-radius: var(--radius-sm);
   box-shadow: 0 2px 6px rgba(42,31,24,.05);
-  transition: background .2s, box-shadow .2s;
+  transition: transform .2s, box-shadow .2s, background .2s;
 }
-.sponsor-tile:has(.sponsor-logo) { flex-direction: column; gap: 8px; }
-.sponsor-tile:hover { background: var(--mr-almagra-50); border-top-color: var(--mr-almagra-dark); box-shadow: 0 4px 12px rgba(139,74,58,.12); }
-.sponsor-tile-link { display: contents; }
-.sponsor-logo { max-height: 44px; width: auto; object-fit: contain; }
+.sponsor-tile:has(.sponsor-logo) { flex-direction: column; gap: 10px; }
+.sponsor-tile:hover { box-shadow: 0 8px 20px rgba(139,74,58,.14); transform: translateY(-3px); border-top-color: var(--mr-almagra-dark); }
+.sponsor-tile-link, .sponsor-tile-zoom {
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.sponsor-tile-zoom { cursor: zoom-in; }
+.sponsor-logo {
+  max-height: 68px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+  transition: transform .25s ease;
+}
+.sponsor-tile-zoom:hover .sponsor-logo { transform: scale(1.06); }
+/* Self-descriptive logos carry their own name: give them a fixed box and let
+   each fill it regardless of aspect ratio, so square/tall logos read as big as
+   wide ones. */
+.sponsor-tile--logo-only { min-height: 188px; }
+.sponsor-tile--logo-only .sponsor-logo {
+  width: 100%;
+  height: 124px;
+  max-height: none;
+}
+
+/* Lightbox */
+.sponsor-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(42, 31, 24, 0.72);
+  backdrop-filter: blur(3px);
+  animation: sponsor-fade .18s ease;
+}
+@keyframes sponsor-fade { from { opacity: 0; } to { opacity: 1; } }
+.sponsor-lightbox-figure {
+  margin: 0;
+  max-width: min(92vw, 720px);
+  background: #fff;
+  border-radius: var(--radius-md, 14px);
+  padding: 28px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.4);
+  text-align: center;
+}
+.sponsor-lightbox-img { width: auto; height: auto; max-width: 100%; max-height: 70vh; object-fit: contain; }
+.sponsor-lightbox-caption {
+  margin-top: 16px;
+  font-family: var(--mr-font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--mr-ink-2);
+}
+.sponsor-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,.14);
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s;
+}
+.sponsor-lightbox-close:hover { background: rgba(255,255,255,.28); }
 .sponsor-name {
   font-family: var(--mr-font-body);
   font-size: 0.8rem;
