@@ -26,6 +26,9 @@ export default function Cartel() {
             <a className="btn btn-outline" href={race.reglamentoUrl} target="_blank" rel="noreferrer">
               <FileText size={18} strokeWidth={1.75} /> Reglamento
             </a>
+            <a className="btn btn-outline" href={race.autorizacionMenoresUrl} target="_blank" rel="noreferrer">
+              <FileText size={18} strokeWidth={1.75} /> Autorización menores
+            </a>
           </div>
         </div>
         <div className="cartel-frame">

@@ -64,6 +64,23 @@ const faqs = [
     ),
   },
   {
+    q: "¿Pueden participar menores de edad?",
+    a: (
+      <>
+        <p>
+          Sí, los menores pueden participar siempre que su padre, madre o tutor
+          legal firme y entregue la autorización junto con el DNI del menor en la
+          recogida de dorsales.
+        </p>
+        <p>
+          <a href={race.autorizacionMenoresUrl} target="_blank" rel="noreferrer">
+            Descargar autorización para menores (PDF) →
+          </a>
+        </p>
+      </>
+    ),
+  },
+  {
     q: "¿Cómo llego al Parque Miguel Hernández?",
     a: (
       <>

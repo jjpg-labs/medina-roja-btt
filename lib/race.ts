@@ -19,6 +19,7 @@ export const race = {
   registrationUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
   registrationOpen: true,
   reglamentoUrl: "/reglamento.pdf",
+  autorizacionMenoresUrl: "/autorizacion-menores.pdf",
   schedule: [
     { time: "7:00",  title: "Recogida de dorsales", desc: "Parque Miguel Hernández, hasta las 8:15.", color: "oliva" },
     { time: "8:15",  title: "Briefing técnico",     desc: "Recorrido, avituallamiento, seguridad y material obligatorio.", color: "almagra" },
