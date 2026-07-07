@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight, Clock, Euro, MapPin, Mountain } from "lucide-react";
 import { race } from "@/lib/race";
 
@@ -37,12 +36,8 @@ export default function Modalidades() {
           <div className="qitem qitem-price">
             <Euro strokeWidth={1.75} />
             <div>
-              <div className="qlbl">Inscripción — {race.price}</div>
-              {race.priceTiers.map((tier) => (
-                <div key={tier.label} className="qval">
-                  <strong>{tier.label}</strong> · {tier.deadline}
-                </div>
-              ))}
+              <div className="qlbl">Inscripción</div>
+              <div className="qval">{race.price}</div>
             </div>
           </div>
           <div className="qitem">
@@ -52,33 +47,15 @@ export default function Modalidades() {
               <div className="qval">{race.startPoint}</div>
             </div>
           </div>
-          {race.registrationOpen ? (
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              <a
-                className="btn btn-outline qitem-btn"
-                href={race.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Inscribirme — ver modalidades y precios"
-              >
-                <ArrowRight size={18} strokeWidth={1.75} /> Inscribirme
-              </a>
-              <a
-                className="btn btn-outline qitem-btn"
-                href={race.toteemiUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Inscribirme vía Toteemi"
-              >
-                <Image src="/sponsors/toteemi.svg" alt="" width={20} height={24} aria-hidden="true" />
-                Toteemi
-              </a>
-            </div>
-          ) : (
-            <button className="btn btn-outline qitem-btn" type="button" aria-disabled="true" disabled>
-              Inscripciones próximamente
-            </button>
-          )}
+          <a
+            className="btn btn-outline qitem-btn"
+            href={race.resultsUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ver la clasificación de la prueba"
+          >
+            <ArrowRight size={18} strokeWidth={1.75} /> Clasificación
+          </a>
         </div>
       </div>
     </section>

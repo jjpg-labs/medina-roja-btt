@@ -45,21 +45,14 @@ const faqs = [
     ),
   },
   {
-    q: "¿Cuánto cuesta y hasta cuándo puedo inscribirme?",
+    q: "¿Dónde veo los resultados y la clasificación?",
     a: (
       <>
-        <p>Las inscripciones se gestionan en{" "}
-          <a href={race.registrationUrl} target="_blank" rel="noreferrer">Deporchip</a>
-          {" "}en dos tramos:
+        <p>
+          La clasificación oficial de la prueba está publicada en{" "}
+          <a href={race.resultsUrl} target="_blank" rel="noreferrer">Deporchip</a>.
         </p>
-        <ul>
-          {race.priceTiers.map((tier) => (
-            <li key={tier.label}>
-              <strong>{tier.label}</strong> ({tier.deadline}) — {tier.price}. {tier.note}.
-            </li>
-          ))}
-        </ul>
-        <p>A partir del <strong>25 de junio</strong> la participación queda sujeta a disponibilidad de dorsales.</p>
+        <p>¡Gracias a todas las personas que participaron en esta II edición!</p>
       </>
     ),
   },
@@ -119,7 +112,7 @@ export default function Faqs() {
         <p className="eyebrow">Información práctica</p>
         <h2 className="section-title">Preguntas frecuentes.</h2>
         <p className="section-lead">
-          Lo que más nos preguntan los inscritos. Si te queda alguna duda, mejor
+          Lo que más nos preguntaron los participantes. Si te queda alguna duda, mejor
           por Instagram — respondemos rápido.
         </p>
         <ul className="faq-list">

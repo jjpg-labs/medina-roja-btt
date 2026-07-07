@@ -4,6 +4,7 @@ import Contacto from "@/components/Contacto";
 import Cronograma from "@/components/Cronograma";
 import Faqs from "@/components/Faqs";
 import Footer from "@/components/Footer";
+import Galeria from "@/components/Galeria";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Mapa from "@/components/Mapa";
@@ -16,6 +17,7 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
+        <Galeria />
         <Modalidades />
         <Mapa />
         <Patrocinadores />

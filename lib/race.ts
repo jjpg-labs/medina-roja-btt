@@ -18,6 +18,10 @@ export const race = {
   ],
   registrationUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
   registrationOpen: true,
+  // La carrera ya se celebró: los CTAs enlazan a la clasificación en lugar de a la
+  // inscripción. Verificar que esta URL muestra los resultados (Deporchip suele
+  // publicarlos en la misma ficha del evento).
+  resultsUrl: "https://deporchip.com/inscripciones/ii-desafio-medina-roja-mtb-almedina/",
   reglamentoUrl: "/reglamento.pdf",
   autorizacionMenoresUrl: "/autorizacion-menores.pdf",
   schedule: [
@@ -41,6 +45,34 @@ export const race = {
     larga: "/larga-50km.gpx",
   },
   toteemiUrl: "https://toteemi.com/producto/inscripcion-desafio-medina-roja/",
+  // Álbum completo de fotos en Google Drive (compartido "cualquiera con el enlace").
+  // Se muestra en el botón "Ver todas las fotos" de la galería. Dejar "" lo oculta.
+  driveAlbumUrl: "https://drive.google.com/drive/folders/1Dpm49VKu2sY2drJB23-zVjahIzM3xz8Q",
+  // Selección curada que se incrusta en la web. `w`/`h` son las dimensiones reales
+  // de cada foto (se capturan al optimizarlas) para respetar su orientación en el
+  // lightbox. Vacío -> la galería solo muestra el botón a Drive.
+  gallery: [
+    { src: "/gallery/g01-9cce51f4.webp", alt: "Ambiente en la salida bajo los toldos de Almedina", w: 901, h: 1600 },
+    { src: "/gallery/g02-c6a2f618.webp", alt: "El trazado con Almedina al fondo", w: 1200, h: 1600 },
+    { src: "/gallery/g03-18a5ff42.webp", alt: "Sobre las pistas rojas del Campo de Montiel", w: 1200, h: 1600 },
+    { src: "/gallery/g04-5542ca7f.webp", alt: "Grupo de corredores en el terreno rojo", w: 1200, h: 1600 },
+    { src: "/gallery/g05-e4159143.webp", alt: "Rodando en pareja por el Campo de Montiel", w: 1200, h: 1600 },
+    { src: "/gallery/g06-cc9be6da.webp", alt: "Corredor entre el rastrojo y los cerros", w: 1200, h: 1600 },
+    { src: "/gallery/g07-944bfafc.webp", alt: "Trazando una curva entre las encinas", w: 1200, h: 1600 },
+    { src: "/gallery/g08-11a2a445.webp", alt: "En plena competición por los senderos", w: 1200, h: 1600 },
+    { src: "/gallery/g09-727e935c.webp", alt: "Bajada técnica por el terreno rojo", w: 1200, h: 1600 },
+    { src: "/gallery/g10-14118f02.webp", alt: "Superando un tramo del recorrido", w: 1200, h: 1600 },
+    { src: "/gallery/g11-d15904a4.webp", alt: "Corredor celebrando en pleno recorrido", w: 1200, h: 1600 },
+    { src: "/gallery/g12-016d98c2.webp", alt: "Sonrisas en la línea de meta", w: 1600, h: 1200 },
+    { src: "/gallery/g13-72dc9a11.webp", alt: "El arco de meta en el Parque Miguel Hernández", w: 860, h: 1600 },
+    { src: "/gallery/g14-f65a3cf8.webp", alt: "Celebración en el podio", w: 1600, h: 999 },
+    { src: "/gallery/g15-e564c5b2.webp", alt: "Levantando el trofeo", w: 1600, h: 1145 },
+    { src: "/gallery/g16-3756499c.webp", alt: "Entrega de premios de la II edición", w: 1600, h: 1102 },
+    { src: "/gallery/g17-417480e4.webp", alt: "Brindis tras cruzar la meta", w: 1600, h: 1048 },
+    { src: "/gallery/g18-788165a5.webp", alt: "Los más pequeños, protagonistas del día", w: 1600, h: 1006 },
+    { src: "/gallery/g19-d5979111.webp", alt: "El pueblo se vuelca con la prueba", w: 1200, h: 1600 },
+    { src: "/gallery/g20-fbf179b7.webp", alt: "Familias en la entrega de premios", w: 1600, h: 896 },
+  ] as { src: string; alt: string; w: number; h: number }[],
   sponsors: [
     { name: "Tienda Joseguí y Lola",     logo: "/sponsors/josegui-lola.webp",          url: null, hideName: true },
     { name: "Estanco Antonia",           logo: "/sponsors/estanco-antonia-v3.webp",    url: null, hideName: true },
@@ -51,7 +83,7 @@ export const race = {
     { name: "Leña Selas",                logo: "/sponsors/lena-selas.webp",            url: null, hideName: true },
     { name: "Baúl Celia",                logo: "/sponsors/baul-celia.webp",            url: null, hideName: true },
     { name: "Casino",                    logo: "/sponsors/casino.webp",                url: null, hideName: true },
-    { name: "Toteemi",                   logo: "/sponsors/toteemi.png",                url: "https://toteemi.com/producto/inscripcion-desafio-medina-roja/", hideName: true },
+    { name: "Toteemi",                   logo: "/sponsors/toteemi.png",                url: null, hideName: true },
     { name: "Ayuntamiento de Almedina",  logo: "/sponsors/ayto-almedina.webp",         url: null },
     { name: "Graficas Matamoros",        logo: "/sponsors/graficas-matamoros.webp",    url: null, hideName: true },
     { name: "Be Fit Infantes",           logo: "/sponsors/befit-infantes.webp",        url: null, hideName: true },

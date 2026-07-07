@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, ChevronDown, Clock, MapPin } from "lucide-react";
+import { ArrowRight, Camera, ChevronDown, Clock, MapPin } from "lucide-react";
 import { race } from "@/lib/race";
 
 export default function Hero() {
@@ -36,36 +36,21 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-cta">
-          <a className="btn btn-accent" href="#mapa">
+          <a className="btn btn-accent" href="#galeria">
+            Ver fotos <Camera size={18} strokeWidth={1.75} />
+          </a>
+          <a className="btn btn-ghost" href="#mapa">
             Ver recorrido <ArrowRight size={18} strokeWidth={1.75} />
           </a>
-          {race.registrationOpen ? (
-            <>
-              <a
-                className="btn btn-ghost"
-                href={race.registrationUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Inscribirme en la prueba"
-              >
-                Inscribirme
-              </a>
-              <a
-                className="btn btn-ghost"
-                href={race.toteemiUrl}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Inscribirme vía Toteemi"
-              >
-                <Image src="/sponsors/toteemi.svg" alt="" width={20} height={24} aria-hidden="true" />
-                Toteemi
-              </a>
-            </>
-          ) : (
-            <button className="btn btn-ghost" type="button" aria-disabled="true" disabled>
-              Inscripciones próximamente
-            </button>
-          )}
+          <a
+            className="btn btn-ghost"
+            href={race.resultsUrl}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Ver la clasificación de la prueba"
+          >
+            Clasificación
+          </a>
         </div>
       </div>
       <a href="#info" className="hero-scroll" aria-label="Scroll">

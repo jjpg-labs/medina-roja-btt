@@ -24,27 +24,22 @@ export default function Header() {
         </span>
       </a>
       <nav className="nav">
+        <a href="#galeria">Galería</a>
         <a href="#info">Modalidades</a>
         <a href="#mapa">Recorrido</a>
         <a href="#cronograma">Cronograma</a>
         <a href="#faqs">FAQs</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      {race.registrationOpen ? (
-        <a
-          href={race.registrationUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="btn btn-primary btn-sm header-cta"
-          aria-label="Inscribirme en la prueba (cabecera)"
-        >
-          Inscribirme
-        </a>
-      ) : (
-        <button type="button" aria-disabled="true" disabled className="btn btn-primary btn-sm header-cta">
-          Próximamente
-        </button>
-      )}
+      <a
+        href={race.resultsUrl}
+        target="_blank"
+        rel="noreferrer"
+        className="btn btn-primary btn-sm header-cta"
+        aria-label="Ver la clasificación de la prueba (cabecera)"
+      >
+        Clasificación
+      </a>
     </header>
   );
 }

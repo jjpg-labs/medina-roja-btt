@@ -45,8 +45,8 @@ export default function Mapa() {
         <p className="eyebrow">Recorrido</p>
         <h2 className="section-title">El trazado por Almedina.</h2>
         <p className="section-lead">
-          Toggle entre las dos rutas. El trazado es orientativo —basado en la edición anterior— y puede variar.
-          Los GPX definitivos estarán disponibles unos días antes de la prueba.
+          Alterna entre las dos rutas. Estos son los trazados definitivos de la II edición —
+          descarga el GPX de cada modalidad para tu ciclocomputador.
         </p>
 
         <div className="map-toggle" role="tablist">
