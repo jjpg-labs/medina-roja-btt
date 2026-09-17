@@ -13,7 +13,7 @@ Landing page for **II Desafío Medina Roja BTT** — a mountain bike race in Alm
 ## Commands
 
 ```bash
-npm run dev      # Development server (localhost:3000)
+npm run dev      # Development server (localhost:3061)
 npm run build    # Production build
 npm run start    # Production server
 npm run lint     # ESLint
