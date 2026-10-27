@@ -1,6 +1,6 @@
 # medina-roja-btt
 
-Los avisos de `AGENTS.md` (Next.js 16 con cambios de ruptura; leer `node_modules/next/dist/docs/` antes de tocar APIs de Next) valen tal cual. El entorno local general está en `~/Projects/CLAUDE.md` y `~/Projects/devenv/CLAUDE.md`.
+Los avisos del bloque `nextjs-agent-rules`, al final de este fichero (Next.js 16 con cambios de ruptura; leer `node_modules/next/dist/docs/` antes de tocar APIs de Next) valen tal cual. El entorno local general está en `~/Projects/CLAUDE.md` y `~/Projects/devenv/CLAUDE.md`.
 
 ## Qué es
 
