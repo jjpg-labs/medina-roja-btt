@@ -1,7 +1,5 @@
 # medina-roja-btt
 
-@AGENTS.md
-
 Los avisos de `AGENTS.md` (Next.js 16 con cambios de ruptura; leer `node_modules/next/dist/docs/` antes de tocar APIs de Next) valen tal cual. El entorno local general está en `~/Projects/CLAUDE.md` y `~/Projects/devenv/CLAUDE.md`.
 
 ## Qué es
@@ -42,3 +40,9 @@ El repo **no está en `DEPLOY_REPOS`**: un merge a `main` no despliega por sí m
 - `lib/race.ts` aún dice «Vuelve el desafío» y «II Edición · 2026» y conserva `registrationOpen: true`: la web se pasó a modo posevento con `resultsUrl`, y esa URL apunta a la misma ficha de Deporchip (su comentario pide verificar que muestre resultados).
 - No reponer la cifra de «450 plazas» ni otras que no salgan del repo (auditoría de veracidad del 2026-08-30, en la ficha).
 - Design system: pendiente la migración a los tokens de Familia JJPG (medina-roja-btt#3, comparte tema con vereda).
+
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
